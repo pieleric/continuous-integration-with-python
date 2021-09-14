@@ -14,8 +14,8 @@ pipeline {
         }
         stage('Test') {
             steps {
-                sh 'py.test'
                 sh 'comedi_board_info /dev/comedi0'
+                sh 'py.test-3'
             }
         }
     }
