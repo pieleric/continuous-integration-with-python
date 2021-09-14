@@ -5,8 +5,6 @@ pipeline {
         stage('build') {
             steps {
                 sh 'python --version'
-                sh 'echo ${GIT_BRANCH}'
-                sh 'git checkout ${GIT_BRANCH}'
             }
         }
         stage('Test') {

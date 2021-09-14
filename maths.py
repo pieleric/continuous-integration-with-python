@@ -1,5 +1,5 @@
 def multiple(first,second):
-    return first * second
+    return first * second * 3
 
 #def subs(a,b):
 #    return a - b
