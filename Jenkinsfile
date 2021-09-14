@@ -2,14 +2,14 @@ pipeline {
     /*agent { docker { image 'python:3.5.1' } }*/
     agent {
       docker {
-        image 'joltc:1.1'
+        image 'joltc:1.2'
         args '--privileged'
       }
     }
     stages {
         stage('build') {
             steps {
-                sh 'python --version'
+                sh 'python3 --version'
             }
         }
         stage('Test') {
